@@ -32,14 +32,14 @@ $(document).ready(function() {
     console.log(numberOptions);
 
     //assign values to gem
-    for (var i = 0; i < numberOptions.length; i++) {
-      var imageCrystal = $('<img>');
-      imageCrystal.attr('data-crystalvalue', numberOptions[i]);
-      imageCrystal.attr('scr', gemImage[i]);
-      imageCrystal.attr('alt', 'crystals');
-      imageCrystal.addClass('crystal-image');
-      $("#gemIcon").append(imageCrystal);
-    }
+    // for (var i = 0; i < numberOptions.length; i++) {
+    //   var imageCrystal = $('<img>');
+    //   imageCrystal.attr('data-crystalvalue', numberOptions[i]);
+    //   imageCrystal.attr('scr', gemImage[i]);
+    //   imageCrystal.attr('alt', 'crystals');
+    //   imageCrystal.addClass('crystal-image');
+    //   $("#gemIcon").append(imageCrystal);
+    // }
   }
 
   function reset() {

@@ -17,11 +17,11 @@ body {
 header {
 	border:1px solid red;
 	margin-bottom:10px;
+
 }
 
 .instruction {
 	border:1px solid red;
-	margin-bottom:20px;
 }
 
 .numberToGuess {
@@ -36,11 +36,19 @@ header {
 	border:1px solid red;
 	float:left;
 	margin:20px;
-
 }
 
 .gem {
 	border:1px solid red;
+	clear:both;
+	float:left;
+	margin-bottom:10px;
+}
+
+img {
+	margin:10px;
+	height:40px;
+	width:40px;
 }
 
 .scoreBoard {
