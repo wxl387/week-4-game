@@ -1,0 +1,50 @@
+body {
+/*  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  color: #777;*/
+  background: url("../images/background.png");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+	border:1px solid red;
+}
+
+header {
+	border:1px solid red;
+	margin-bottom:10px;
+}
+
+.instruction {
+	border:1px solid red;
+	margin-bottom:20px;
+}
+
+.numberToGuess {
+	border:1px solid red;
+	float:left;
+	height:50px;
+	width:50px;
+	margin-top:20px;
+}
+
+.winAndLose {
+	border:1px solid red;
+	float:left;
+	margin:20px;
+
+}
+
+.gem {
+	border:1px solid red;
+}
+
+.scoreBoard {
+	border:1px solid red;
+	clear:both;
+	margin-top:20px;
+}
