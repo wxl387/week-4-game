@@ -27,8 +27,6 @@ header {
 .numberToGuess {
 	border:1px solid red;
 	float:left;
-	height:50px;
-	width:50px;
 	margin-top:20px;
 }
 
