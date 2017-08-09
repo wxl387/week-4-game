@@ -13,6 +13,7 @@ $(document).ready(function() {
   $("#wins").text(win);
   $("#losses").text(lose);
   $("#totalScore").text(counter);
+  reset();
 
   function randomNum(x, y) {
     return Math.floor(Math.random() * ( ( y - x ) + 1 ) + x );
@@ -28,18 +29,19 @@ $(document).ready(function() {
       var gemValue = randomNum(1, 12);
       numberOptions.push(gemValue);
     }
-
+    console.log("cnm");
     console.log(numberOptions);
-
+      
     //assign values to gem
-    // for (var i = 0; i < numberOptions.length; i++) {
-    //   var imageCrystal = $('<img>');
-    //   imageCrystal.attr('data-crystalvalue', numberOptions[i]);
-    //   imageCrystal.attr('scr', gemImage[i]);
-    //   imageCrystal.attr('alt', 'crystals');
-    //   imageCrystal.addClass('crystal-image');
-    //   $("#gemIcon").append(imageCrystal);
-    // }
+    for (var i = 0; i < numberOptions.length; i++) {
+      var imageCrystal = $('<img>');
+      imageCrystal.attr('data-crystalvalue', numberOptions[i]);
+//      console.log(imageCrystal);
+      imageCrystal.attr('src', gemImage[i]);
+      imageCrystal.attr('alt', 'gemIcon');
+      imageCrystal.addClass('crystal-image');
+      $("#gemIcon").append(imageCrystal);
+    }
   }
 
   function reset() {
@@ -54,8 +56,11 @@ $(document).ready(function() {
   //on click function
   $(".crystal-image").on("click", function() {
       var crystalValue = ($(this).attr("data-crystalvalue"));
+      console.log(crystalValue)
       crystalValue = parseInt(crystalValue);
       counter += crystalValue;
+      $("#totalScore").text(counter);
+
       //update
       // alert("New score: " + counter);
 
